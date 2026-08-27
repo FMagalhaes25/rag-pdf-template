@@ -1,29 +1,15 @@
-# Pergunte aos seus documentos
+<p align="center">
+  <a href="https://www.python.org/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png" alt="Python" height="64"></a>
+  <a href="https://streamlit.io/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/streamlit.png" alt="Streamlit" height="64"></a>
+  <a href="https://www.langchain.com/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/langchain_icon.png" alt="LangChain" height="64"></a>
+  <a href="https://www.trychroma.com/"><img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/sqlite.png" alt="ChromaDB com persistência SQLite" height="64"></a>
+</p>
 
-Aplicação de **RAG (Retrieval-Augmented Generation)** para fazer perguntas sobre documentos PDF locais. Os arquivos colocados na pasta `base/` são processados, transformados em vetores e armazenados em um banco vetorial ChromaDB. Quando o usuário faz uma pergunta, a aplicação recupera os trechos mais relevantes e os envia como contexto para um modelo da OpenAI gerar uma resposta fundamentada nos documentos.
+
+Aplicação de **RAG (Retrieval-Augmented Generation)** para fazer perguntas sobre documentos PDF locais. Os arquivos colocados na pasta `base/` são processados, transformados em vetores e armazenados em um banco vetorial ChromaDB. Quando um usuário faz uma pergunta, a aplicação recupera os trechos mais relevantes e os envia como contexto para um modelo da OpenAI gerar uma resposta fundamentada nos documentos.
 
 > **Em uma frase:** coloque seus PDFs em `base/`, gere o índice e pergunte aos seus próprios documentos por uma interface Streamlit ou pelo terminal.
 
-## Tecnologias
-
-<p>
-  <a href="https://www.python.org/"><img src="https://skillicons.dev/icons?i=python" alt="Python" height="42"></a>
-  <a href="https://streamlit.io/"><img src="https://streamlit.io/images/brand/streamlit-mark-color.svg" alt="Streamlit" height="42"></a>
-  <a href="https://www.langchain.com/"><img src="https://python.langchain.com/img/brand/wordmark.png" alt="LangChain" height="42"></a>
-  <a href="https://www.trychroma.com/"><img src="https://raw.githubusercontent.com/chroma-core/chroma/main/docs/images/chroma.svg" alt="ChromaDB" height="42"></a>
-  <a href="https://openai.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="OpenAI" height="42"></a>
-</p>
-
-| Tecnologia | Papel no projeto |
-| --- | --- |
-| [Python](https://www.python.org/) | Linguagem da aplicação e dos scripts de ingestão |
-| [Streamlit](https://streamlit.io/) | Interface web para perguntas e respostas |
-| [LangChain](https://www.langchain.com/) | Orquestração do carregamento, divisão, embeddings, recuperação e geração |
-| [ChromaDB](https://www.trychroma.com/) | Banco vetorial persistido localmente em `db/` |
-| [OpenAI Embeddings](https://platform.openai.com/docs/guides/embeddings) | Conversão de textos e perguntas em vetores semânticos |
-| [OpenAI Chat Models](https://platform.openai.com/docs/guides/text-generation) | Geração da resposta final a partir do contexto recuperado |
-| [pypdf](https://pypi.org/project/pypdf/) | Extração de texto dos arquivos PDF |
-| [python-dotenv](https://pypi.org/project/python-dotenv/) | Leitura da variável `OPENAI_API_KEY` a partir do `.env` |
 
 ## O que é RAG?
 
